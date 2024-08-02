@@ -13,12 +13,11 @@ for i in numbers:
         a = (i % j)
         if a != 0 :
             b = b + 1
-    if (i - b) <= 2:
+    if (i - b) == 2:
         primes = primes + [i]
-    else:
+    if (i - b) > 2:
         not_primes = not_primes + [i]
 print("Простые ", primes)
 print("Не простые ", not_primes)
-
 
 
